@@ -1,0 +1,30 @@
+<forms:BezelInteractionPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
+             x:Class="OurGroceriesTizen.MainWindow"
+             RotaryFocusObject="{Reference ListList}"
+             NavigationPage.HasNavigationBar="False">
+    <forms:BezelInteractionPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label
+                Text="Lists"
+                FontAttributes="Bold"
+                TextColor="Aqua"
+                HorizontalTextAlignment="Center"
+                HorizontalOptions="CenterAndExpand"
+                Margin="0,10,0,0"
+            />
+            <Grid>
+                <forms:CircleListView
+                    x:Name="ListList"
+                    ItemSelected="OnItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding name}" Detail="{Binding listType}"></TextCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </forms:CircleListView>
+            </Grid>
+        </StackLayout>
+    </forms:BezelInteractionPage.Content>
+</forms:BezelInteractionPage>

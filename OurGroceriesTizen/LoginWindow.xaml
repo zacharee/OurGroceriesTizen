@@ -1,0 +1,43 @@
+<forms:BezelInteractionPage xmlns="http://xamarin.com/schemas/2014/forms"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                            xmlns:forms="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
+                            x:Class="OurGroceriesTizen.LoginWindow"
+                            NavigationPage.HasNavigationBar="False">
+    <forms:BezelInteractionPage.Content>
+        <Grid>
+            <StackLayout
+                VerticalOptions="FillAndExpand"
+                Padding="30,80,30,30">
+                <forms:PopupEntry 
+                    x:Name="Email"
+                    Placeholder="Email"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                />
+                <forms:PopupEntry
+                    x:Name="Password" 
+                    Placeholder="Password"
+                    IsPassword="True" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                />
+
+                <Button 
+                    x:Name="Submit"
+                    Text="Log In" 
+                    Clicked="OnSubmit" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                />
+            </StackLayout>
+            
+            <ActivityIndicator
+                x:Name="Progress"
+                IsVisible="False"
+                IsRunning="True"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+            />
+        </Grid>
+    </forms:BezelInteractionPage.Content>
+</forms:BezelInteractionPage>
