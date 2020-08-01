@@ -14,7 +14,8 @@
 
   <ItemGroup>
     <Folder Include="lib" />
-    <Folder Include="res\" />
+    <Folder Include="Resources" />
+    <Folder Include="Resources\" />
   </ItemGroup>
 
   <ItemGroup>
