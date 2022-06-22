@@ -21,7 +21,7 @@
   <ItemGroup>
 <!--    <PackageReference Include="EcoCore" Version="7.0.0.8859" />-->
     <PackageReference Include="Microsoft.NETCore.Platforms" Version="3.1.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Tizen.Wearable.CircularUI" Version="1.5.0" />
   </ItemGroup>
 
